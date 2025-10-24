@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 import os
 
---- 1. ฟังก์ชันโหลดโมเดล (ใช้ Cache เพื่อความเร็ว) ---
+##--- 1. ฟังก์ชันโหลดโมเดล (ใช้ Cache เพื่อความเร็ว) ---
 
 ใช้ @st.cache_resource สำหรับโหลดโมเดล
 
