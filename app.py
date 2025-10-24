@@ -5,21 +5,6 @@ import os
 
 ##--- 1. ฟังก์ชันโหลดโมเดล (ใช้ Cache เพื่อความเร็ว) ---
 
-##ใช้ @st.cache_resource สำหรับโหลดโมเดล
-
-##@st.cache_resource
-##def load_model(filename):
-"""
-โหลดโมเดลจากไฟล์ .pkl
-คืนค่า None ถ้าไม่พบไฟล์หรือมีข้อผิดพลาด
-"""
-try:
-# ตรวจสอบว่าไฟล์มีอยู่จริง
-if not os.path.exists(filename):
-st.error(f"ข้อผิดพลาด: ไม่พบไฟล์โมเดล '{filename}'")
-st.info("กรุณารันสคริปต์ 'regression_model.py' เพื่อสร้างไฟล์โมเดลก่อน")
-return None
-
     # เปิดและโหลดโมเดล
     with open(filename, 'rb') as f:
         model = pickle.load(f)
