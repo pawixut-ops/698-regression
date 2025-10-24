@@ -5,10 +5,10 @@ import os
 
 ##--- 1. ฟังก์ชันโหลดโมเดล (ใช้ Cache เพื่อความเร็ว) ---
 
-ใช้ @st.cache_resource สำหรับโหลดโมเดล
+##ใช้ @st.cache_resource สำหรับโหลดโมเดล
 
-@st.cache_resource
-def load_model(filename):
+##@st.cache_resource
+##def load_model(filename):
 """
 โหลดโมเดลจากไฟล์ .pkl
 คืนค่า None ถ้าไม่พบไฟล์หรือมีข้อผิดพลาด
